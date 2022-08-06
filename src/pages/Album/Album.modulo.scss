@@ -1,0 +1,118 @@
+.wrapper-album {
+    padding: 20px 16px;
+    display: flex;
+    gap: 20px;
+
+    .content-left {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 28%;
+        align-items: center;
+
+        .wrapper-img {
+            width: 300px;
+            height: 300px;
+
+            overflow: hidden;
+
+            .img-item-album {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.7s;
+                border-radius: 10px;
+
+                &:hover {
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+            }
+
+            &.thump-rotate-off {
+                animation-duration: 0.5s;
+                animation: rotateCDBack 1s linear;
+                //animation-fill-mode: forwards;
+                transition: border-radius 0.5s ease-out 0.5s;
+            }
+
+            &.thump-rotate-on {
+                border-radius: 50%;
+                animation: spinner 9s linear infinite;
+                transition: border-radius 0.2s linear 0.2s;
+            }
+        }
+
+        .album-text-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 4px;
+            width: 100%;
+
+            span {
+                font-size: 1.4rem;
+                color: hsla(0, 0%, 100%, 0.5);
+                text-align: center;
+            }
+
+            .title-album {
+                max-width: 100%;
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 1.5;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                color: var(--white-color);
+            }
+        }
+
+        .action-album {
+            display: flex;
+            justify-content: center;
+
+            .desc-button {
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                border-radius: 999px;
+                height: 36px;
+                padding: 5px 25px;
+                background-color: #7200a1;
+                border-color: #7200a1;
+                text-transform: uppercase;
+                font-weight: 400;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+
+    .content-right {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 12px;
+
+        .description {
+            span {
+                color: var(--text-color);
+            }
+
+            .main-desc {
+                color: var(--white-color);
+                padding-left: 10px;
+            }
+        }
+
+        .sub-desc {
+            margin-top: 10px;
+        }
+    }
+}

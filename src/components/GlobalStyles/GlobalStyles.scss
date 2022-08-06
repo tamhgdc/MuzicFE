@@ -1,0 +1,109 @@
+@import 'normalize.css';
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #170f23;
+    --primary-purple-color: #7200a1;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: hsla(0, 0%, 100%, 0.5);
+    --primary-color-player: hsla(0, 0%, 100%, 0.1);
+    --link-text-hover: #c662ef;
+
+    // Default Layout
+    --default-layout-header-height: 70px;
+
+    --img-logo-mp3: url('https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg');
+    --empty-song-icon: url('https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/icons/empty-fav-song-dark.png');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a {
+    color: var(--white-color);
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+        color: #c662ef;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+// Fonts emmbeded
+
+html *::-webkit-scrollbar {
+    width: 0;
+}
+
+.slick-slider .slick-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 4rem;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateCDBack {
+    0% {
+        transform: rotate(0);
+        border-radius: 50%;
+    }
+
+    25% {
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+
+    55% {
+        transform: rotate(720deg);
+        border-radius: 50%;
+    }
+
+    75% {
+        transform: rotate(1080deg);
+        border-radius: 50%;
+    }
+
+    100% {
+        transform: rotate(1080deg);
+        border-radius: 10px;
+    }
+}
+
+.swal2-popup {
+    font-size: 1.6rem;
+}

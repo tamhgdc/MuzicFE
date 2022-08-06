@@ -1,0 +1,128 @@
+.carousel-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 16px;
+}
+
+.carousel-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: block;
+}
+
+.all-top-100 {
+    display: flex;
+    gap: 8px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    align-items: center;
+    color: hsla(0, 0%, 100%, 0.5);
+
+    &:hover {
+        color: #c662ef;
+    }
+}
+
+.carousel-container {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &.primary {
+        gap: 20px;
+    }
+
+    &.large {
+        gap: 16px;
+        justify-content: space-between;
+    }
+}
+
+.carousel-item {
+    width: 18%;
+    min-width: 206px;
+    max-width: 208px;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.carousel-item.large {
+    width: 32%;
+    height: 100px;
+    max-width: none;
+}
+
+.img-item-wrapper {
+    height: 210px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-item.large .img-item-wrapper {
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-item {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    object-fit: cover;
+
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}
+
+.carousel-description {
+    padding-top: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    .main-text {
+        font-weight: 700;
+        text-transform: capitalize;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+
+        &:hover {
+            color: var(--link-text-hover);
+            cursor: pointer;
+        }
+    }
+
+    .sub-text {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        color: hsla(0, 0%, 100%, 0.5);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+    }
+}
+
+.img-artist {
+    border-radius: 50%;
+}
+
+.artist {
+    margin-top: 16px;
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

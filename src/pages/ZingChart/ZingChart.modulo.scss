@@ -1,0 +1,116 @@
+.wrapper-chart {
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .line-chart-wrapper {
+        width: 100%;
+
+        .chart-header {
+            padding-left: 20px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            font-size: 4rem;
+            font-weight: 700;
+
+            .icon-play {
+                background-image: radial-gradient(at center, #fff 40%, transparent 0);
+                color: #7200a1;
+
+                &:hover {
+                    filter: brightness(0.9);
+                }
+            }
+        }
+    }
+
+    .zingchart-showtop {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+        .show-more {
+            width: 13%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 999px;
+            height: 38px;
+            border: 1px solid var(--white-color);
+            padding: 5px 25px;
+
+            &:hover {
+                background-color: var(--primary-color-player);
+            }
+        }
+    }
+}
+
+.line-chart {
+    width: 100%;
+}
+
+.wrapper-weektop {
+    margin: 0 -42px;
+    background: url('https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.6.34/static/media/week-chart-bg.edf332e5.jpg')
+        top/cover no-repeat;
+    height: 100%;
+
+    .bg-alpha {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(32, 19, 53, 0.9);
+        padding: 25px 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .section-header {
+            a {
+                text-transform: capitalize;
+                font-size: 4rem;
+                font-weight: 800;
+            }
+        }
+
+        .week-chart-box {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+
+            .week-chart-item {
+                width: 32%;
+                background-color: hsla(0, 0%, 100%, 0.05);
+                border-radius: 16px;
+                padding: 20px 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+
+                .header-item {
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                    padding-left: 40px;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+
+                    .icon-play {
+                        width: 29px;
+                        height: 29px;
+
+                        background-image: radial-gradient(at center, #fff 40%, transparent 0);
+                        color: #7200a1;
+
+                        &:hover {
+                            filter: brightness(0.9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

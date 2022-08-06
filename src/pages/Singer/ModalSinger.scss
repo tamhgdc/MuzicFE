@@ -1,0 +1,85 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.modal-singer {
+    width: 680px;
+    background-image: linear-gradient(to top, #4a2d5e, #432275);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 32px;
+    border-radius: 10px;
+    gap: 30px;
+    animation: appear 0.4s ease-out;
+
+    .modal-singer-header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        position: relative;
+
+        img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            user-select: none;
+        }
+
+        .modal-text-block {
+            margin-left: 20px;
+
+            .infor {
+                font-weight: 500;
+                opacity: 1;
+            }
+
+            span {
+                opacity: 0.9;
+                line-height: 1.6;
+            }
+        }
+
+        span {
+            font-size: 1.6rem;
+        }
+
+        .close-btn {
+            display: flex;
+            align-self: flex-start;
+            position: absolute;
+            right: 0;
+            font-size: 2rem;
+            top: 0;
+            opacity: 0.9;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .modal-content {
+        height: 320px;
+        overflow: scroll;
+    }
+}
+
+@keyframes appear {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,48 @@
+.new-release-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .new-release-header {
+        margin-top: 20px;
+        font-size: 4rem;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .icon-play {
+            background-image: radial-gradient(at center, #fff 40%, transparent 0);
+            color: #7200a1;
+            width: 46px;
+            height: 46px;
+
+            &:hover {
+                filter: brightness(0.9);
+            }
+        }
+    }
+
+    .new-release-showtop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .show-more {
+            width: 13%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 999px;
+            height: 38px;
+            border: 1px solid var(--white-color);
+            padding: 5px 25px;
+
+            &:hover {
+                background-color: var(--primary-color-player);
+            }
+        }
+    }
+}

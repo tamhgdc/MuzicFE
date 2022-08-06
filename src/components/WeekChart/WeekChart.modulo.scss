@@ -1,0 +1,154 @@
+.weekchart-list {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        font-size: 1.4rem;
+        color: var(--text-color);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+        width: 100%;
+    }
+}
+
+.weekchart-item {
+    display: flex;
+    user-select: none;
+    min-height: 62px;
+    padding: 0 10px;
+    color: var(--text-color);
+    border-radius: 4px;
+
+    &:hover {
+        background-color: var(--primary-color-player);
+        border-color: var(--primary-color-player);
+    }
+}
+
+.weekchart-item.is-active {
+    background-color: var(--primary-purple-color);
+}
+
+.weekchart-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+
+    .img-song-weekchart {
+        width: 40px;
+        height: 40px;
+
+        .img-weekchart {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    .weekchart-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+
+        .title-weekchart {
+            font-size: 1.6rem;
+            color: var(--white-color);
+            font-weight: 500;
+        }
+    }
+
+    span {
+        width: 90%;
+    }
+}
+
+.weekchart-right {
+    width: 20%;
+    display: flex;
+    align-items: center;
+
+    span {
+        text-align: center;
+    }
+
+    .time-item {
+        width: 100%;
+        span {
+            text-align: center;
+        }
+    }
+
+    .hover-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .btn {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border-radius: 50%;
+            color: var(--white-color);
+            cursor: pointer;
+            font-size: 1.8rem;
+
+            &.btn-center {
+                font-size: 4rem;
+
+                &:hover {
+                    color: #c662ef;
+                }
+            }
+
+            &:hover {
+                background-color: var(--primary-color-player);
+            }
+        }
+    }
+}
+
+.weekchart-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number-rank {
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--white-color);
+    padding: 5px;
+}
+
+.number-rank-1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px #4a90e2;
+    padding: 5px;
+}
+
+.number-rank-2 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px #50e3c2;
+    padding: 5px;
+}
+
+.number-rank-3 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px #e35050;
+    padding: 5px;
+}

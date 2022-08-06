@@ -1,0 +1,225 @@
+.wrapper-artist {
+    .artist-header {
+        margin: 0 -42px;
+        background-color: rgba(41, 21, 71, 0.8);
+        height: 410px;
+        padding: 20px 56px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .artist-content-left {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .name-title {
+                font-size: 4rem;
+                font-weight: 700;
+            }
+
+            .more-infor {
+                padding-left: 10px;
+                font-weight: 700;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            .actions {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 20px;
+
+                button {
+                    padding: 9px 24px;
+                    font-size: 1.4rem;
+                    display: flex;
+                    align-items: center;
+                    background-color: var(--primary-purple-color);
+                    border-color: var(--primary-purple-color);
+                    color: var(--white-color);
+                    border-radius: 999px;
+                    text-transform: uppercase;
+                    gap: 8px;
+
+                    span {
+                        display: flex;
+                        align-items: center;
+                        transform: translateY(1px);
+                    }
+
+                    &:hover {
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .awards {
+                .ic-zing-choice {
+                    width: 67px;
+                    height: 48px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .artist-content-right {
+            width: 260px;
+            height: 260px;
+
+            .img-singer {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .artist-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 36px;
+        gap: 20px;
+
+        .artist-navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 52px;
+
+            .navbar-list {
+                display: flex;
+                justify-content: center;
+                background-color: var(--primary-color-player);
+                padding: 3px;
+                border-radius: 15px;
+                height: 32px;
+
+                .navbar-item {
+                    font-size: 1.4rem;
+                    min-width: 120px;
+                    line-height: 1;
+                    color: #dadada;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+
+                    &.is-active {
+                        color: var(--white-color);
+                        border-radius: 15px;
+                        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 7%);
+                        background-color: hsla(0, 0%, 100%, 0.3);
+                    }
+
+                    &:hover {
+                        color: var(--white-color);
+                    }
+                }
+            }
+        }
+
+        .artist-container {
+            .artist-overview {
+                .popular-song {
+                    padding: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+
+                    .section-header {
+                        font-size: 2rem;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                    }
+
+                    .popular-content {
+                        display: flex;
+                        height: 240px;
+                        justify-content: space-between;
+
+                        .img-popular-box {
+                            width: 25%;
+                            position: relative;
+
+                            img {
+                                width: 150px;
+                                height: 150px;
+                                position: absolute;
+                                top: 19%;
+                                border-radius: 10px;
+                                transition: all 0.3s ease-out;
+                                opacity: 0.5;
+
+                                &.first {
+                                    z-index: 3;
+                                    left: 40px;
+                                    width: 250px;
+                                    height: 250px;
+                                    top: 0;
+                                    opacity: 1;
+                                }
+
+                                &.second {
+                                    z-index: 2;
+                                    left: 20px;
+                                    width: 200px;
+                                    height: 200px;
+                                    top: 10%;
+                                    opacity: 0.8;
+                                }
+
+                                &.three {
+                                    z-index: 1;
+                                    left: 0px;
+                                }
+
+                                &:hover {
+                                    opacity: 1;
+                                    transform: scale(1);
+                                }
+                            }
+                        }
+
+                        .popular-media-list {
+                            width: 70%;
+                            height: 270px;
+                            overflow: scroll;
+                        }
+                    }
+                }
+            }
+
+            .artist-list-songs {
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                .songs-header {
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                }
+            }
+
+            .artist-singer-ep {
+            }
+
+            .artist-mv {
+                padding: 16px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+.modal {
+    z-index: 10;
+}
